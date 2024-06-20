@@ -1,15 +1,33 @@
 import './App.css';
 import Home from './Pages/Home'
 import Header from './Components/layout/Header' 
+import NavBar from './Components/layout/NavBar';
+import AppWrapper from './Components/styles/container/AppWrapper'
+import StyledContainer from './Components/styles/container/StyledContainer'
+import { Routes, Route } from "react-router-dom"
+
+
+import About from './Pages/About'
+import Services from './Pages/Services'
+import Ranges from './Pages/Ranges'
+import Contact from './Pages/Contact'
+
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <header className="App-header">
-        <Home/>
-      </header>
-    </div>
+    <AppWrapper className="App">
+      <Header/>
+      <StyledContainer>
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element ={ <Home/> }/>
+          <Route path="about-us" element ={ <About/> }/>
+          <Route path="services" element ={ <Services/> }/>
+          <Route path="ranges-of-house" element ={ <Ranges/> }/>
+          <Route path="contact" element ={ <Contact/> }/>
+        </Routes>
+      </StyledContainer>
+    </AppWrapper>
   );
 }
 

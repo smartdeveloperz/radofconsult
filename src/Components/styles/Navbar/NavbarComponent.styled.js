@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-// import { Navbar } from 'react-bootstrap';
-
 
 export const Topbar = styled.div`
 padding: 20px;
@@ -21,6 +19,10 @@ background-color: #003366;
     justify-content: center;
     align-items: center;
     gap: 10px;
+  }
+
+  @media (max-width: 992px){
+    display: none;
   }
 `
 
