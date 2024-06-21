@@ -1,0 +1,20 @@
+[
+    {
+      "image": "./Images/Hero/radof10.jpg",
+      "text": "Welcome to Radof Consult"
+    },
+    {
+      "image": "./Images/Hero/radof11.jpg",
+      "text": "Property Management",
+      "subtext": "Buy, Sell and Rent your Property"
+    },
+    {
+        "image": "./Images/Hero/radof12.jpg",
+        "text": "Interior Decoration"
+    },
+    {
+        "image": "./Images/Hero/radof13.jpg",
+        "text": "Architectural Services"
+    }
+  ]
+  
