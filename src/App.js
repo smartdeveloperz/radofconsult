@@ -11,14 +11,14 @@ import About from './Pages/About'
 import Services from './Pages/Services'
 import Ranges from './Pages/Ranges'
 import Contact from './Pages/Contact'
-
+import CircleFollower from "./Components/CircleFollower"
 
 function App() {
   return (
     <AppWrapper className="App">
       <Header/>
+      <NavBar />
       <StyledContainer>
-        <NavBar />
         <Routes>
           <Route exact path="/" element ={ <Home/> }/>
           <Route path="about-us" element ={ <About/> }/>
@@ -27,6 +27,7 @@ function App() {
           <Route path="contact" element ={ <Contact/> }/>
         </Routes>
       </StyledContainer>
+      <CircleFollower />
     </AppWrapper>
   );
 }

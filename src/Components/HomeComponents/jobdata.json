@@ -1,0 +1,33 @@
+[
+    {
+      "index": 1,
+      "image": "./Images/Services/properties.jpg",
+      "text": "Properties"
+    },
+    {
+      "index": 2,
+      "image": "./Images/Services/architecture.jpg",
+      "text": "Architectural Services"
+    },
+    {
+        "index": 3,
+        "image": "./Images/Services/land-surveying.jpg",
+        "text": "Land Surveying"
+    },
+    {
+        "index": 4,
+        "image": "./Images/Services/construction.jpg",
+        "text": "Construction"
+    },
+    {
+        "index": 5,
+        "image": "../Images/Services/roof.jpg",
+        "text": "Roof Design"
+    },
+    {
+        "index": 6,
+        "image": "./Images/Services/project-management.jpg",
+        "text": "Project Management"
+    }
+  ]
+  
