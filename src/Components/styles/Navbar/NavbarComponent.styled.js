@@ -7,7 +7,7 @@ font-family: candara;
 font-size: 18px;
 font-weight: 600;
 color: white;
-background-color: #003366; 
+background-color: #003366;
   .topbar{
     display: flex;
     justify-content: center;

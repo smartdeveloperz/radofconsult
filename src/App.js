@@ -5,7 +5,7 @@ import NavBar from './Components/layout/NavBar';
 import AppWrapper from './Components/styles/container/AppWrapper'
 import StyledContainer from './Components/styles/container/StyledContainer'
 import { Routes, Route } from "react-router-dom"
-
+import Footer from "./Components/layout/Footer"
 
 import About from './Pages/About'
 import Services from './Pages/Services'
@@ -28,6 +28,7 @@ function App() {
         </Routes>
       </StyledContainer>
       <CircleFollower />
+      <Footer/>
     </AppWrapper>
   );
 }

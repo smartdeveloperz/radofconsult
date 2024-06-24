@@ -47,6 +47,7 @@ export const HeroWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 50px;
 `
 
 const Slide = styled.div`

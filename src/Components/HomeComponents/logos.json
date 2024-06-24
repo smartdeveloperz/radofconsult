@@ -1,0 +1,22 @@
+[
+    { 
+        "index": 1,
+        "image": "./Images/trustedCompanies/alfregs.jpg", "alt": "alfregs=logo" 
+    },
+    { 
+        "index": 2,    
+        "image": "./Images/trustedCompanies/compassion.png", "alt": "Tcompassion-logo"
+    },
+    { 
+        "index": 3,    
+        "image": "./Images/trustedCompanies/awake.jpg", "alt": "awake-logo" 
+    },
+    { 
+        "index": 4,    
+        "image": "./Images/trustedCompanies/nafti.png", "alt": "nafti-logo" 
+    },
+    { 
+        "index": 5,    
+        "image": "./Images/trustedCompanies/paradise.jpg", "alt": "paradise-logo" 
+    }
+]
