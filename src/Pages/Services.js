@@ -1,21 +1,23 @@
-import React,{ useState } from 'react'
+import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import Banner from '../Components/Props/Banner';
 import jobData from '../Components/HomeComponents/jobdata.json';
-import Client from "../Components/HomeComponents/Clients";
+import Client from '../Components/HomeComponents/Clients';
 
-function Services() {
-
-  const [selectedService, setSelectedService] = useState(jobData[0]);
+const Services = () => {
+  const location = useLocation();
+  const initialService = location.state?.selectedService || jobData[0];
+  const [selectedService, setSelectedService] = useState(initialService);
 
   const handleServiceClick = (service) => {
-    console.log('Service clicked:', service);
     setSelectedService(service);
   };
-    return (
-      <>
+
+  return (
+    <>
       <Header>
-        <Banner text="Services"/>
+        <Banner text="Services" />
       </Header>
       <ContentWrapper>
         <LeftColumn>
@@ -40,19 +42,19 @@ function Services() {
               ) : (
                 <p>No services available</p>
               )}
-              </ServiceList>
+            </ServiceList>
           </RightColumn>
           <ServiceImage src={selectedService.image} alt={selectedService.text} />
         </Container>
       </ContentWrapper>
-      <Client/>
+      <Client />
     </>
-    );
-  }
+  );
+};
 
-  export default Services;
+export default Services;
 
-  const ContentWrapper = styled.div`
+const ContentWrapper = styled.div`
   margin-bottom: 4.3em;
 `;
 
@@ -68,7 +70,7 @@ const ServiceBtn = styled.button`
   }
 `;
 
-  const Container = styled.div`
+const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
@@ -77,12 +79,6 @@ const ServiceBtn = styled.button`
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-
 `;
 
 const LeftColumn = styled.div`
@@ -102,7 +98,6 @@ const LeftColumn = styled.div`
 
 const RightColumn = styled.div`
   flex: 1;
-
 `;
 
 const Title = styled.h2`
@@ -133,11 +128,11 @@ const ServiceImage = styled.img`
 `;
 
 const Header = styled.div`
-background-color: #003366;
-height: 150px;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 2.3em;
-color: #fff;
-`
+  background-color: #003366;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3em;
+  color: #fff;
+`;

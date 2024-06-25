@@ -1,17 +1,24 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import jobdata from './jobdata.json';
 
 const ServicesCard = () => {
+  const navigate = useNavigate();
+
+  const handleCardClick = (job) => {
+    navigate('/services', { state: { selectedService: job } });
+  };
+
   return (
     <Container>
-      {jobdata.map((job) => (
-        <CardWrapper key={job.index} >
+      {jobdata.map(({ index, image, text, services }) => (
+        <CardWrapper key={index} onClick={() => handleCardClick({ index, image, text, services })}>
           <ImageContainer>
-            <Image src={job.image} alt={job.text} />
+            <Image src={image} alt={text} loading="lazy" />
           </ImageContainer>
           <CardBody>
-            <h3>{job.text}</h3>
+            <h3>{text}</h3>
           </CardBody>
         </CardWrapper>
       ))}
@@ -43,6 +50,7 @@ const CardWrapper = styled.div`
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.05);
@@ -70,7 +78,7 @@ const CardBody = styled.div`
   padding: 15px;
   text-align: center;
 
-  h3{
+  h3 {
     margin: 0;
     font-size: 1.2em;
     color: #333;
