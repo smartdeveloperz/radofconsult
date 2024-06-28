@@ -47,7 +47,7 @@ const Services = () => {
           <ServiceImage src={selectedService.image} alt={selectedService.text} />
         </Container>
       </ContentWrapper>
-      <Client />
+      <Client /> 
     </>
   );
 };
