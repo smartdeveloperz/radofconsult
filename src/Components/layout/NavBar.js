@@ -37,12 +37,12 @@ const NavBar = () => {
                       className='dropdown-content'
                       href="ranges"
                     >
-                      <NavDropdown.Item className='nav-dropdown-item' href="#action3">Our Ranges of Houses</NavDropdown.Item>
-                      <NavDropdown.Item className='nav-dropdown-item' href="#action4">
+                      <NavDropdown.Item className='nav-dropdown-item' href="/our-ranges-of-houses">Our Ranges of Houses</NavDropdown.Item>
+                      <NavDropdown.Item className='nav-dropdown-item' href="/why-build-with-us">
                         Why Build With Us?
                       </NavDropdown.Item>
                       <NavDropdown.Divider />
-                      <NavDropdown.Item className='nav-dropdown-item' href="#action5">
+                      <NavDropdown.Item className='nav-dropdown-item' href="/house-purchase-procedure">
                         House Purchase Procedure
                       </NavDropdown.Item>
                     </NavDropdown>

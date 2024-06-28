@@ -58,7 +58,7 @@ const Title = styled.div`
 
 margin: 40px 0;
 text-align: center;
-font-size: 2.3em;
+font-size: 1.2em;
 text-decoration: underline;
 color: #003366;
 letter-spacing: 5px;

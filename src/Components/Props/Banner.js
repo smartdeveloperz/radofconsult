@@ -11,6 +11,6 @@ export default Banner
 
 const Container = styled.div`
 
-
+text-align:center;
 
 `
